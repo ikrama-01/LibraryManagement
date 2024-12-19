@@ -78,6 +78,20 @@
 
 ---
 
+
+### Run Test cases
+1. Navigate to the Backend folder:
+   ```bash
+   cd backend
+   ```
+
+2. Run The command:
+   ```bash
+   pytest tests.py
+   ```
+
+---
+
 ## API Endpoints
 
 ### Books
