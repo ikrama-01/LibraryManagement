@@ -28,11 +28,10 @@
 ### Backend Setup
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/ikrama-01/LibraryManagement
    ```
 
-2. Navigate to the backend folder (if applicable):
+2. Navigate to the backend folder:
    ```bash
    cd backend
    ```
@@ -108,6 +107,14 @@
       "status": "Unavailable"
     }
     ```
+    - **Search a Book:**
+  - `PUT /search-books?q=params`
+  - Request Body:
+    ```json
+    {
+      "query": "Author/Title of Book"
+    }
+    ```
 
 - **Delete a Book:**
   - `DELETE /delete-books/<book_id>`
@@ -148,13 +155,13 @@
 ## Design Choices
 - **Backend:**
   - Flask was chosen for its simplicity and quick setup for small-scale projects.
-  - SQLite is used as the database for easy management without requiring additional setup.
+  - SQLite is used as database for easy management without requiring additional setup and no 3rd Party Libraries.
 
 - **Frontend:**
   - React was selected for its component-based structure and ease of creating dynamic user interfaces.
 
 - **API Testing:**
-  - Postman was used to ensure all endpoints function correctly before integrating with the frontend.
+  - Postman was used to ensure all endpoints function correctly before integrating with the front end.
 
 ---
 
