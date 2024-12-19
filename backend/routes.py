@@ -23,7 +23,7 @@ def add_book():
     conn.commit()
     conn.close()
     
-    return jsonify({'message': 'book added successfully!'}),200
+    return jsonify({'message': 'Book added successfully!'}),201
 
 @app.route('/read-books', methods=['GET'] )
 def read_book():
@@ -56,7 +56,7 @@ def update_book(book_id):
         conn.commit()
         conn.close()
         
-        return jsonify({'message':'data updated successfully'}),201
+        return jsonify({'message':'Book updated successfully'}),201
     except Exception as e:
         return jsonify({'message': f'Error: {str(e)}'}), 500
     
