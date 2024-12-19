@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+/* App.css */
+
+/* Apply a soft gradient background for the whole app */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #F9D5E5, #F6A8B3); /* Light pastel gradient */
+  color: #333; /* Dark text for contrast */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background 0.3s ease-in-out; /* Smooth background transition */
+}
+
+/* Center the main container (App component) */
+.App {
+  text-align: center;
+  padding: 20px;
+  background: #fff; /* White background for content section */
+  border-radius: 20px; /* Rounded corners for the container */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* Styling for the header */
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+/* Button styling for the entire app (Buttons, etc.) */
+button {
+  margin: 10px;
+  padding: 18px 40px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(135deg, #FFB6B9, #FF8A80); /* Soft pink gradient */
+  color: white;
+  border: none;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  outline: none;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #FF8A80, #FFB6B9); /* Hover effect with reversed gradient */
+  transform: translateY(-4px); /* Slight elevation effect */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+button:active {
+  background: linear-gradient(135deg, #FF8A80, #FFB6B9); /* Keeps same gradient for active */
+  transform: translateY(2px); /* Slight push down effect */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Normal shadow on active */
+}
+
+/* Form and input fields */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+label {
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #FF8A80; /* Soft pink focus border */
+  box-shadow: 0 0 5px rgba(255, 138, 128, 0.5); /* Soft shadow on focus */
+}
+
+/* Table styling for displaying books */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: linear-gradient(135deg, #F9D5E5, #F6A8B3); /* Soft pastel gradient */
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Subtle hover effect */
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+table td {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Section for handling buttons dynamically */
+.section-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.section-buttons button {
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Add styles for links or navigation if needed */
+a {
+  color: #FF8A80;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+

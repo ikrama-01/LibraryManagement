@@ -1,0 +1,23 @@
+
+---
+
+### 3. **Prepare `.gitignore`**
+Create a `.gitignore` file to exclude unnecessary files:
+```gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+
+# Node.js
+node_modules/
+build/
+
+# SQLite
+*.db
+*.sqlite3
+
+# Misc
+.env
